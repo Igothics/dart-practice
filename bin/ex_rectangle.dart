@@ -16,7 +16,7 @@ class Vector{
   final double a;
   final double b;
 
-  double get length => roundIt(sqrt(pow(a, 2) + pow(b, 2)), 2);
+  double get length => sqrt(pow(a, 2) + pow(b, 2));
   Vector get reverse => Vector(a * -1, b * -1);
 }
 
@@ -40,6 +40,7 @@ class Triangle {
   double get angleA => getAngleFrom(vecAB, vecAC);
   double get angleB => getAngleFrom(vecBA, vecBC);
   double get angleC => getAngleFrom(vecCB, vecCA);
+
   List<double> get angleList => [angleA, angleB, angleC];
   List<double> get edgeList => [aEdge, bEdge, cEdge];
   List<Point> get pointList => [pA, pB, pC];
@@ -54,9 +55,9 @@ class Triangle {
   bool get isEquilateralTriangle => edgeList.toSet().length == 1;
   bool get isIsoscelesRightTriangle => isIsoscelesTriangle && isRightTriangle; // may be necessary later
 
-  get lengthAH => roundIt(cEdge * sin(angleB), 2);
-  get lengthBH => roundIt(cEdge * sin(angleA), 2);
-  get lengthCH => roundIt(bEdge * sin(angleA), 2);
+  get lengthAH => cEdge * sin(angleB);
+  get lengthBH => cEdge * sin(angleA);
+  get lengthCH => bEdge * sin(angleA);
 
   double get perimeter => aEdge + bEdge + cEdge;
   double get area => (((pB.x - pA.x) * (pC.y - pA.y) - (pC.x - pA.x) * (pB.y -pA.y)) / 2).abs();
@@ -74,13 +75,13 @@ class Triangle {
     if (isTriangle) {
       print(" - It's a triangle! then..");
       print('');
-      print(" - Length of a edge is: $aEdge");
-      print(" - Length of b edge is: $bEdge");
-      print(" - Length of c edge is: $cEdge");
+      print(" - Length of a edge is: ${aEdge.toStringAsFixed(2)}");
+      print(" - Length of b edge is: ${bEdge.toStringAsFixed(2)}");
+      print(" - Length of c edge is: ${cEdge.toStringAsFixed(2)}");
       print('');
-      print(" - Degree of angle A: $angleA");
-      print(" - Degree of angle B: $angleB");
-      print(" - Degree of angle C: $angleC");
+      print(" - Degree of angle A: ${angleA.toStringAsFixed(2)}");
+      print(" - Degree of angle B: ${angleB.toStringAsFixed(2)}");
+      print(" - Degree of angle C: ${angleC.toStringAsFixed(2)}");
       print('');
 
       if (isRightTriangle) {
@@ -100,10 +101,10 @@ class Triangle {
       }
 
       print('');
-      print(" - It's area is: $area");
-      print(" - Length of AH edge is: $lengthAH");
-      print(" - Length of BH edge is: $lengthBH");
-      print(" - Length of CH edge is: $lengthCH");
+      print(" - It's area is: ${area.toStringAsFixed(2)}");
+      print(" - Length of AH edge is: ${lengthAH.toStringAsFixed(2)}");
+      print(" - Length of BH edge is: ${lengthBH.toStringAsFixed(2)}");
+      print(" - Length of CH edge is: ${lengthCH.toStringAsFixed(2)}");
       print('');
       print(" - It's Centroid point is: G$centroid");
       print(" - It's inCenter point is: H$inCenter");
@@ -119,5 +120,4 @@ void main(){
 }
 
 double getAngleFrom(Vector n1, Vector n2) => rad2Deg(acos((n1.a * n2.a + n1.b * n2.b) / (n1.length * n2.length)));
-double rad2Deg(double rad) => (rad * 180 / pi).roundToDouble();
-double roundIt(double num, tail) => double.parse(num.toStringAsFixed(2));
+double rad2Deg(double rad) => rad * 180 / pi;
