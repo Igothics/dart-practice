@@ -1,0 +1,147 @@
+{
+  "mon toan" : {
+    "kiem tra mieng" : {
+      "list diem" : [10,9,10,9,8,10],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [9,8,10,9,10,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [9,9,9,10],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [10,9],
+      "he so" : 3
+    }
+  },
+  "mon ly" : {
+    "kiem tra mieng" : {
+      "list diem" : [5,2,2,5,3,4],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6.5,8,10,9.5,10,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6,7,8,4.5],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [10,3.5],
+      "he so" : 3
+    }
+  },
+  "mon hoa" : {
+    "kiem tra mieng" : {
+      "list diem" : [5.5,7,10,5,8,8],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,6,2,2,5.5,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6,7,8.5,5],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [7,10],
+      "he so" : 3
+    }
+  },
+  "mon sinh" : {
+    "kiem tra mieng" : {
+      "list diem" : [5.5,1,2,5,7,4],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,8.5,10,2.5,3,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6,7.5,8,10],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [6,2.5],
+      "he so" : 3
+    }
+  },
+
+  "mon van" : {
+    "kiem tra mieng" : {
+      "list diem" : [5,6,2,5,8.5,4],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,8.5,10,2,3,3],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6.5,7,9,5],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [6.5,5.5],
+      "he so" : 3
+    }
+  },
+  "mon anh" : {
+    "kiem tra mieng" : {
+      "list diem" : [5.5,8,2,5,10,4],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,8.5,10,2,3,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6,7.5,8,5],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [7,9.5],
+      "he so" : 3
+    }
+  },
+  "mon su" : {
+    "kiem tra mieng" : {
+      "list diem" : [3,6,6,5,2.5,4],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,8.5,10,2,7,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6,7.5,8,5.5],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [10,7],
+      "he so" : 3
+    }
+  },
+  "mon dia" : {
+    "kiem tra mieng" : {
+      "list diem" : [1,6,2,5,8,10],
+      "he so" : 1
+    },
+    "kiem tra 15p" : {
+      "list diem" : [6,8.5,10,2,3.5,8],
+      "he so" : 1
+    },
+    "kiem tra 1 tiet" : {
+      "list diem" : [6.5,7,10,9],
+      "he so" : 2
+    },
+    "thi cuoi ky" : {
+      "list diem" : [9,10],
+      "he so" : 3
+    }
+  }
+}
