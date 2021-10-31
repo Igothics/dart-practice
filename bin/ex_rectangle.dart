@@ -109,7 +109,6 @@ class Triangle {
       print(" - It's inCenter point is: H$inCenter");
     }else{
       print(" - It's not a triangle! So.. quit here");
-      exit(-1);
     }
   }
 }
